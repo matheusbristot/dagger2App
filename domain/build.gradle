@@ -10,6 +10,9 @@ dependencies {
     //Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
+    //Dagger2
+    compile "com.google.dagger:dagger:${dagger_version}"
+
     // rx
     implementation 'io.reactivex.rxjava2:rxjava:2.2.2'
     implementation 'io.reactivex.rxjava2:rxkotlin:2.2.0'

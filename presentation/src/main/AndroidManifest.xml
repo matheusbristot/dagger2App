@@ -19,6 +19,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name=".provider.preferences.PreferencesProvider"
+            android:authorities=".provider.cache.CacheProvider"
+            android:exported="false" />
+
+        <provider
+            android:name=".provider.StethoProvider"
+            android:authorities="com.facebook.stetho.StethoProvider"
+            android:exported="false" />
     </application>
 
 </manifest>
