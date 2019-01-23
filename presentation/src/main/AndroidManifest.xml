@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.bristot.presentation">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".provider.application.Dagger2Application"
         android:allowBackup="true"

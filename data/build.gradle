@@ -20,13 +20,13 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField "String", "API_ENDPOINT", "\"https://randomuser.me/api/\""
+            buildConfigField "String", "API_ENDPOINT", "\"https://randomuser.me\""
         }
         staging {
-            buildConfigField "String", "API_ENDPOINT", "\"https://randomuser.me/api/\""
+            buildConfigField "String", "API_ENDPOINT", "\"https://randomuser.me\""
         }
         debug {
-            buildConfigField "String", "API_ENDPOINT", "\"https://randomuser.me/api/\""
+            buildConfigField "String", "API_ENDPOINT", "\"https://randomuser.me\""
         }
     }
 
