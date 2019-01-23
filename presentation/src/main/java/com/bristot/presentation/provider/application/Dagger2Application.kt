@@ -26,5 +26,3 @@ class Dagger2Application : MultiDexApplication(), HasActivityInjector {
         return dispatchingActivityInjector
     }
 }
-
-
