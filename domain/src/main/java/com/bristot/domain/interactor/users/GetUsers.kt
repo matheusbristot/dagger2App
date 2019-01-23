@@ -1,6 +1,8 @@
 package com.bristot.domain.interactor.users
 
-class GetUsers(private val usersRepository: UsersRepository) {
+import javax.inject.Inject
+
+class GetUsers @Inject constructor(private val usersRepository: UsersRepository) {
 
     fun execute(gender: String) = usersRepository.getUsersByGender(gender)
 }

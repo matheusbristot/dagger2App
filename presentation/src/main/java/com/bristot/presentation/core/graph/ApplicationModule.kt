@@ -4,8 +4,10 @@ import com.bristot.data.client.storage.preferences.Preference
 import com.bristot.data.client.storage.preferences.PreferenceImpl
 import com.bristot.domain.Logger
 import com.bristot.domain.Resources
+import com.bristot.domain.SchedulerProvider
 import com.bristot.presentation.utils.LoggerImpl
 import com.bristot.presentation.utils.ResourcesImpl
+import com.bristot.presentation.utils.SchedulerProviderImpl
 import dagger.Binds
 import dagger.Module
 import javax.inject.Singleton
@@ -24,4 +26,8 @@ abstract class ApplicationModule {
     @Binds
     @Singleton
     abstract fun bindPreferencesProvider(preferenceImpl: PreferenceImpl): Preference
+
+    @Binds
+    @Singleton
+    abstract fun bindSchedulerProvider(schedulerProviderImpl: SchedulerProviderImpl): SchedulerProvider
 }

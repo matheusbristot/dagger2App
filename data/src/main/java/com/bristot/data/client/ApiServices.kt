@@ -8,6 +8,6 @@ import retrofit2.http.Query
 
 interface ApiServices {
 
-    @GET()
+    @GET("/api/")
     fun getUsersByGender(@Query("gender") gender: String): Single<Response<List<ApiUser>>>
 }
